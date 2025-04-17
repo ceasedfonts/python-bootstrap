@@ -76,8 +76,18 @@ Use Anywhere (Optional)
 
 Set a global alias in your shell config:
 
-alias newproj='make -C ~/PATH_TO_YOUR_PROJECT/python-bootstrap init'
+```bash
+newproj() {
+  local project_name="$1"
+  local current_dir="$(pwd)"
+  make -C ~/PATH-TO-YOUR-PROJECT/python-bootstrap init PROJECT="$project_name" TARGET_DIR="$current_dir"
+}
+```
 
 Then run:
 
-newproj PROJECT=myproject
+```bash
+newproj PROJECT=myproject - or anything else you want as the project name.
+```
+
+This will create a new project in the current directory with the specified name.
