@@ -17,9 +17,9 @@ Features
 
 ### Full project setup
 
-'''bash
+```bash
 make init PROJECT=myproject
-'''
+```
 
 Creates this structure:
 
@@ -32,41 +32,41 @@ myproject/
 
 ### Reset venv inside existing project
 
-'''bash
+```bash
 make venv PROJECT=myproject
-'''
+```
 
 (Re)creates .venv-myproject and reinstalls packages.
 
 ### Freeze requirements
 
-'''bash
+```bash
 make freeze
-'''
+```
 
 Creates requirements.txt with pip freeze.
 
 ### Clean cache + venv
 
-'''bash
+```bash
 make clean
-'''
+```
 
 Removes .venv-*, __pycache__, checkpoints, and .pyc files.
 
 ### Launch Jupyter
 
-'''bash
+```bash
 make notebook
-'''
+```
 
 Starts Jupyter Notebook using your local venv.
 
 ### Destroy project (IRREVERSIBLE!)
 
-'''bash
+```bash
 make destroy
-'''
+```
 
 Deletes venv, notebooks, scripts, data, and cached files.
 
