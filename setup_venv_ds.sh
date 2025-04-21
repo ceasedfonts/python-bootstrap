@@ -22,7 +22,7 @@ source "${VENV_DIR}/bin/activate"
 
 echo "Installing common data science packages"
 pip install --upgrade pip
-pip install jupyter ipykernel numpy pandas matplotlib seaborn scikit-learn
+pip install jupyter ipykernel numpy pandas dtale matplotlib seaborn scikit-learn
 
 # Optional: confirm ipykernel installed (defensive)
 if ! python -c "import ipykernel" &>/dev/null; then
